@@ -4,38 +4,11 @@
 <html>
     <head>
         <title>Potato Studio</title>
-        <style>
-             .navbar {
-                background-color: rgb(108, 180, 108); 
-                overflow: hidden;
-                margin: 0;
-                padding: 0;
-              }  
+        <style> 
              body {
                       font-family: Arial, Helvetica, sans-serif; 
-                     margin: 0%;
+                     margin: 0;
                     }                          
-             .navbar a {
-                float: left;
-                color: #464242;
-                text-align: center;
-                padding: 14px 16px;
-                text-decoration: none;
-                font-size: 14px;
-                
-             }
-             .navbar :hover {
-                background-color: rgb(179, 214, 179);
-                color: black;
-             }
-             .topbar {
-                background-color: rgb(133, 196, 133);
-                color: black;
-             }
-            
-            body { background-color:rgba(255, 235, 205, 0.048);
-               padding: 9px;
-            }
              
            .center{
             text-align: center;
@@ -80,35 +53,74 @@
             body {
               background-color: rgb(236, 236, 184);
             }
-               </style>
-        
-        </head>
 
-        <body> 
-         <header>
-           <h1 class="the">The beginning of Abandance</h1> 
-          
-           <input class="put" type="search" placeholder="search.">
-         </header>
-            <div class="navbar">
-                <a class="topbar" href="HOME">HOME</a>
-                <a href="VISION">VISION</a>
-                  <a href="Products">PRODUCTS</a>
-                  <a href="PARTNERS">PARTNERS</a>
-                   <a href="ABOUT">ABOUT</a>
-                <a href="CONTACT ">CONTACT US</a>
-                   </div>
+         .navbar {
+            list-style-type:none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: rgb(108, 180, 108); 
+            position: fixed;
+            top: 0;
+            width: 100%;
+         }
+
+
+         .navbar .nav-tabs {
+            float: left;
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 14px;
+         }
+
+
+         .navbar .nav-tabs:hover {
+            background-color: rgb(179, 214, 179);
+            color: white;
+         }
+
+         .navbar .nav-tabs.active {
+            background-color: rgb(52, 189, 52);
+            color: white;
+         }
+
+         .navbar .nav-search[type=text] {
+            float: right;
+            padding: 6px;
+            border: none;
+            margin-top: 6px;
+            margin-right: 16px;
+            
+         }
+         
+</style>
+        </head>
+        <body>
+         
+         <div class="navbar">
+            <a class="nav-tabs" href="#home">HOME</a>
+            <a class="nav-tabs" href="#vision">VISION</a>
+            <a class="nav-tabs" href="#products">PRODUCTS</a>
+            <a class="nav-tabs" href="#partners">PARTNERS</a>
+            <a class="nav-tabs" href="#about">ABOUT</a>
+            <a class="nav-tabs" href="#partners">CONTACT US</a>
+            <input class="nav-search" type="text" placeholder="Search..">
+          </div>
+
           <div class="center">
-        <img src="greenp.jpg" alt="a farm" class="responsive" >
+        <img src="images/greenp.jpg" alt="a farm" class="responsive" >
           </div>
 
 
           <article>
             <div>
             <h1><u>Farm of Hope</u></h1>
-            <img src="farm2.jpg" alt="a farm" style="height: 120px;width: 180px;" >
-            <img src="farm.png" alt="a farm" style="height: 120px;width: 180px;" >
-            <img src="greenp.jpg" alt="a farm" style="height: 120px;width: 180px;" >
+            <img src="images/farm2.jpg" alt="a farm" style="height: 120px;width: 180px;" >
+            <img src="images/farm.png" alt="a farm" style="height: 120px;width: 180px;" >
+            <img src="images/greenp.jpg" alt="a farm" style="height: 120px;width: 180px;" >
                   <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, <br>
                      making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more<br>
                    obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered</p>
@@ -134,9 +146,9 @@
                   <article>
                      <div>
                      <h1><u>OUR COMMUNITY AND PLANT</u></h1>
-                     <img src="community.jpg" alt="a farm" style="height: 120px;width: 180px;" >
-                     <img src="PICKING.jpg"a farm" style="height: 120px;width: 180px;" >
-                     <img src="plant.jpg" alt="a farm" style="height: 120px;width: 180px;" >
+                     <img src="images/community.jpg" alt="a farm" style="height: 120px;width: 180px;" >
+                     <img src="images/PICKING.jpg"a farm" style="height: 120px;width: 180px;" >
+                     <img src="images/plant.jpg" alt="a farm" style="height: 120px;width: 180px;" >
                            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, <br>
                               making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more<br>
                             obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered</p>
@@ -147,9 +159,9 @@
                   <article>
                      <div>
                      <h1><u>Top Quality Farming Equipment</u></h1>
-                     <img src="potato-harvesting_1.jpeg"a farm" style="height: 120px;width: 180px;" >
-                     <img src="TRACKTER.jpg"a farm" style="height: 120px;width: 180px;" >
-                     <img src="agriculture.jpg" alt="a farm" style="height: 120px;width: 180px;" >
+                     <img src="images/potato-harvesting_1.jpeg"a farm" style="height: 120px;width: 180px;" >
+                     <img src="images/TRACKTER.jpg"a farm" style="height: 120px;width: 180px;" >
+                     <img src="images/agriculture.jpg" alt="a farm" style="height: 120px;width: 180px;" >
                            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, <br>
                               making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more<br>
                             obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered</p>
